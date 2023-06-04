@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Lista de nomes</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <h1 class="titulo">Lista de pessoas</h1>
+        </header>
+
+        <main class="principal">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Altura</th>
+                            <th>Aniversário</th>
+                        </tr>
+                    </thead>
+
+                        <tbody class="corpo-tabela">
+            
+                            <tr class="pessoa">
+                                <td class="nome">Cecilia</td>
+                                <td class="idade">20</td>
+                                <td class="altura">1.60m</td>
+                                <td class="aniversario">26/09</td>
+                            </tr>
+
+                            <tr class="pessoa">
+                                <td class="nome">Ana</td>
+                                <td class="idade">18</td>
+                                <td class="altura">1.70m</td>
+                                <td class="aniversario">14/07</td>
+                            </tr>
+
+                            <tr class="pessoa">
+                                <td class="nome">João</td>
+                                <td class="idade">15</td>
+                                <td class="altura">1.80m</td>
+                                <td class="aniversario">12/10</td>
+                            </tr>
+
+                            <tr class="pessoa">
+                                <td class="nome">Vinicius</td>
+                                <td class="idade">19</td>
+                                <td class="altura">1.83m</td>
+                                <td class="aniversario">30/11</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </section>
+        </main>
+
+        <section class="secao-formulario">
+            <h2 class="principal-formulario">&bull; FORMULÁRIO &bull;</h2>
+            <ul class="mensagem-erro"></ul>
+            <form class="formulario" id="formulario-adiciona">
+                <div class="section">
+                    <div id="nome1" class="grupo">
+                        <label for="nomesobrenome"></label>
+                        <input type="text" id="nome" placeholder="Meu nome é" required class="campo">
+                    </div>
+
+                    <div id="idade1" class="grupo">
+                        <label class="label-idade" for="idade"></label>
+                        <input type="text" id="idade" placeholder="Idade" required class="campo">
+                    </div>
+                </div>
+
+
+                <div class="section">
+                    <div id="niver1" class="grupo">
+                        <label for="aniversario"></label>
+                        <input type="text" id="aniversario" placeholder="Aniversário" required class="campo">
+                    </div>
+
+                    <div id="altura1" class="grupo">
+                        <label for="altura"></label>
+                        <input type="text" id="altura" placeholder="Altura" required class="campo">
+                    </div>
+                </div>
+
+                    <div class="grupo">
+                        <input class="enviar" id="enviar-nome" type="submit" value="Enviar" checked>
+                    </div>
+
+            
+            
+            </form>
+        </section>
+       
+
+        <footer>
+        </footer>
+
+        <script src="botao.js"></script>
+        <script src="pessoas.js"></script>
+
+    </body>
+
+</html>
